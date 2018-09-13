@@ -6,47 +6,49 @@
   <meta name="keyword" content="キーワード">
   <meta name="description" content="説明">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/select.css">
 </head>
 
 <body>
-  <h1>Sample Form</h1>
-  <div>
+  <h1 id="heading">Sample Form</h1>
+  <div id="content">
     <form id="form" action="#" method="POST">
-      <div>
+      <div class="section">
         <label for="name">名前(全角)</label>
         <div>
           <input type="text" id="name" value="" placeholder="山田太郎">
         </div>
       </div>
-      <div>
+      <div class="section">
         <label for="name">名前(フリガナ)</label>
         <div>
           <input type="text" id="name" value="" placeholder="ヤマダタロウ">
         </div>
       </div>
-      <div>
+      <div class="section">
         <label for="email">メールアドレス</label>
         <div>
           <input type="email" id="email" value="" placeholder="sample@sample.com">
         </div>
       </div>
-      <div>
+      <div class="section">
         <label for="age">年齢</label>
         <div>
-          <input type="number" id="age" value="" placeholder="20"><span>歳</span>
+          <input type="text" id="age" value="" placeholder="20">
         </div>
       </div>
-      <div>
+      <div class="section">
         <label for="post-number">郵便番号<span>(ハイフンなし)<span></label>
         <div>
-          <input type="number" id="post-number" value="" placeholder="1006009">
+          <input type="text" id="post-number" value="" placeholder="1006009">
         </div>
       </div>
-      <div>
+      <div class="section">
         <label for="pref">都道府県</label>
-        <div>
-          <select name="pref" id="pref">
-              <option value="">
+        <div class="selectWrap">
+          <select class="select" name="pref" id="pref">
+              <option value="" hidden>選択してください</option>
               <option value="東京都" >東京都</option>
               <option value="北海道" >北海道</option>
               <option value="青森県" >青森県</option>
@@ -97,26 +99,26 @@
           </select>
         </div>
       </div>
-      <div>
+      <div class="section">
         <label for="address-1">住所</label>
         <div>
           <input type="text" id="address-1" value="" placeholder="千代田区">
         </div>
       </div>
-      <div>
+      <div class="section">
         <label for="address-2">建物名</label>
         <div>
           <input type="text" id="address-2" value="" placeholder="霞が関霞が関ビル">
         </div>
       </div>
-      <div>
+      <div class="section">
         <label for="phone-number">電話番号</label>
         <div>
-          <input type="number" id="phone-number" value="" placeholder="090-0000-0000">
+          <input type="text" id="phone-number" value="" placeholder="090-0000-0000">
         </div>
       </div>
       <div>
-        <input type="submit" value="送信">
+        <a href="#" class="btn">送信</a>
       </div>
       </form>
   </div>  

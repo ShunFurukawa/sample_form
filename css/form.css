@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/***************************
+フォームのやつ
+***************************/
+
+#form input {
+  font-size: 16px;
+  border: 1px solid #999999;
+  padding: 2px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1) inset;
+}
+
+#form input:focus {
+  box-shadow: 0px 0px 5px 2px #ccccee;
+  outline-style: none;
+}
+
+input[type="text"], input[type="email"] {
+  margin-top: 10px;
+  width: 65%;
+  height: 28px;
+}
+
+.btn{
+  width: 5em;
+  text-align: center;
+  margin-top: 1.5em;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+.btn:active {
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}

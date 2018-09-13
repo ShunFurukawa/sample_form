@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* ==================
+  全般的なスタイル
+===================== */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+body {
+  background-color: #E6E6E6;
+  text-align: center;
+  margin-top: 36px;
+}
+
+label {
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+span {
+  font-size: 0.6em;
+
+}
+
+#heading {
+  background-color: cadetblue;
+}
+
+#content {
+  margin: 24px 36px;
+  padding: 24px 72px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.section {
+  margin: 20px 0px;
+}
