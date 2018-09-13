@@ -23,22 +23,10 @@ input[type="text"], input[type="email"] {
   height: 28px;
 }
 
-.btn{
-  width: 5em;
-  text-align: center;
+input[type="submit"] {
+  width: 7em;
   margin-top: 1.5em;
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
   background: #668ad8;
   color: #FFF;
-  border-bottom: solid 4px #627295;
-  border-radius: 3px;
-}
-
-.btn:active {
-  -ms-transform: translateY(4px);
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);
-  border-bottom: none;
+  border-style: none;
 }
