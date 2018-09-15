@@ -43,3 +43,10 @@ span {
 .section {
   margin: 20px 0px;
 }
+
+label.error {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: red;
+  display: block;
+}

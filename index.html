@@ -10,7 +10,6 @@
   <link rel="stylesheet" media="screen and (max-width:768px)" href="css/sp_main.css">
   <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="css/select.css">
-  <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -20,31 +19,31 @@
       <div class="section">
         <label for="name">名前(全角)</label>
         <div>
-          <input type="text" id="name" value="" placeholder="山田太郎" required>
+          <input type="text" id="name" name="name" value="" placeholder="山田太郎" required>
         </div>
       </div>
       <div class="section">
-        <label for="name">名前(フリガナ)</label>
+        <label for="name_yomi">名前(フリガナ)</label>
         <div>
-          <input type="text" id="name" value="" placeholder="ヤマダタロウ" required>
+          <input type="text" id="name_yomi" name="name_yomi" value="" placeholder="ヤマダタロウ" required>
         </div>
       </div>
       <div class="section">
         <label for="email">メールアドレス</label>
         <div>
-          <input type="email" id="email" value="" placeholder="sample@sample.com" required>
+          <input type="email" id="email" name="email" value="" placeholder="sample@sample.com" required>
         </div>
       </div>
       <div class="section">
         <label for="age">年齢</label>
         <div>
-          <input type="text" id="age" value="" placeholder="20" required>
+          <input type="text" id="age" name="age" value="" placeholder="20" required minlength="1" maxlength="2">
         </div>
       </div>
       <div class="section">
-        <label for="post-number">郵便番号<span>(ハイフンなし)<span></label>
+        <label for="post_number">郵便番号<span>(ハイフンなし)<span></label>
         <div>
-          <input type="text" id="post-number" value="" placeholder="1006009" required>
+          <input type="text" id="post_number" name="post_number" value="" placeholder="1006009" required minlength="7" maxlength="7">
         </div>
       </div>
       <div class="section">
@@ -103,26 +102,29 @@
         </div>
       </div>
       <div class="section">
-        <label for="address-1">住所</label>
+        <label for="address_1">住所</label>
         <div>
-          <input type="text" id="address-1" value="" placeholder="千代田区" required>
+          <input type="text" id="address_1" name="address_1" value="" placeholder="千代田区" required>
         </div>
       </div>
       <div class="section">
-        <label for="address-2">建物名</label>
+        <label for="address_2">建物名</label>
         <div>
-          <input type="text" id="address-2" value="" placeholder="霞が関霞が関ビル" required>
+          <input type="text" id="address_2" value="" placeholder="霞が関霞が関ビル">
         </div>
       </div>
       <div class="section">
-        <label for="phone-number">電話番号<span>(ハイフンなし)</span></label>
+        <label for="phone_number">電話番号<span>(ハイフンなし)</span></label>
         <div>
-          <input type="text" id="phone-number" value="" placeholder="09012345678" required>
+          <input type="text" id="phone_number" name="phone_number" value="" placeholder="09012345678" required>
         </div>
       </div>
       <input type="submit" value="送信">
       </form>
-  </div>  
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type='text/javascript' src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
